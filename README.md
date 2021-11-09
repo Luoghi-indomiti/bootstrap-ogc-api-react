@@ -1,4 +1,4 @@
-# A workshop to create a React application to inspect an OGC Open API and with a lot of potential to develop!
+# A workshop to create a React application to inspect an OGC Open API, with a lot of potential to develop!
 
 ## Introduction
 
