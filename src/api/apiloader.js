@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+import Collections from "./collections";
 
 class ApiLoader extends Component {
 
@@ -62,31 +63,21 @@ class ApiLoader extends Component {
     render() {
         const{url,conforms} = this.state
         return(
-            <div>
+            <div className="row">
                 <label>API url </label>
                 <input type='text' name='url' value={url} onChange={this.checkUrl}></input>
                 {
                     conforms > 0 && 
                     <div>
-                        <h2>It looks good!</h2>
+                        <div className="alert alert-success">It looks good!</div>
+                        <Collections url={url} />
                     </div>
                 }
                 {
                     conforms < 0 && 
                     <div>
-                        <h2>Not valid</h2>
-                    </div>
-                }
-                {
-                    conforms === -1 && 
-                    <div>
-                        <h3>It doesn't seem an OGC Open API</h3>
-                    </div>
-                }
-                {
-                    conforms === -2 && 
-                    <div>
-                        <h3>Missing required conformance</h3>
+                        {conforms === -1 && <div className="alert alert-danger">It doesn't seem an OGC Open API</div>}
+                        {conforms === -2 && <div className="alert alert-warning">Missing required conformance</div>}
                     </div>
                 }
             </div>
