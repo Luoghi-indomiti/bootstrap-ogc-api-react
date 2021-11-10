@@ -15,9 +15,9 @@ To do so, you'll need a working OGC API, better with some nice example data. If 
 
 - Create another [React component](https://reactjs.org/docs/components-and-props.html) named **Collections** that:
     - Requests and lists the collections available at `http://yourapiendpoint/collections?f=json`
-    - Check which collections contain **feature items** (because we know that our API has Features, but it may still contain other types of collections)
-    - **Optional:** Show Features and other collections in separate groups
-    - Wire the `Collections` component to `ApiLoader` as a button: makes sense to show it only for valid API
+    - Checks which collections contain **feature items** (because we know that our API has Features, but it may still contain other types of collections)
+    - **Optional:** Shows Features and other collections in separate groups
+- Wire the `Collections` component to `ApiLoader` as a button: makes sense to show it only for valid API (please share the url between the two components)
 
 
 Collections endpoint returns an array of Collection items. Each Item has different properties, for now we are interested into:
