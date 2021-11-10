@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Checking collections
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:heavy_check_mark: Now we have an `ApiLoader` component that tells us if the endpoint loaded is a valid OGC Open Api Features. It wouldn't be difficult to check other conformances, but for this workshop we will focus on Features.
 
-## Available Scripts
 
-In the project directory, you can run:
+## What will we do now:
 
-### `yarn start`
+In addition to conformance, every OGC API has a "collections" endpoint that returns the groupings of objects, features, as in our case, or others, depending on the specification implemented. Now we will list collections available.
+To do so, you'll need a working OGC API, better with some nice example data. If you don't have one, feel free to use one of the following:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [joana server](http://18.156.191.178)
+- [pygeoapi demo server](https://demo.pygeoapi.io/stable)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Third step :rocket: 
 
-### `yarn test`
+- Create another [React component](https://reactjs.org/docs/components-and-props.html) named **Collections** that:
+    - Requests and lists the collections available at `http://yourapiendpoint/collections?f=json`
+    - Check which collections contain **feature items** (because we know that our API has Features, but it may still contain other types of collections)
+    - **Optional:** Show Features and other collections in separate groups
+    - Wire the `Collections` component to `ApiLoader` as a button: makes sense to show it only for valid API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+Collections endpoint returns an array of Collection items. Each Item has different properties, for now we are interested into:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- *id* : to identify the collection
+- *title* : the title that we can show in the list
+- *description* : would be nice to show also a description
+- *itemType* : to check if it's a collection of **feature** items or not
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## The lazy way :sleepy:
 
-### `yarn eject`
+You guessed it!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git checkout step-3
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
