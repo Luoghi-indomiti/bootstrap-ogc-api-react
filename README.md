@@ -1,4 +1,4 @@
-# Checking collections
+# Checking features
 
 :heavy_check_mark: Now that we have a component that lists all the features collections available.
 
