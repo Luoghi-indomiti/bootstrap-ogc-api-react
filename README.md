@@ -28,5 +28,6 @@ Items endpoint returns an array of Feature items. Each Item has different proper
 
 ```bash
 git checkout step-4
+yarn install
 ```
 
