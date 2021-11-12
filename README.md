@@ -55,5 +55,6 @@ cd bootstrap-ogc-api-react
 
 ```bash
 git checkout step-1
+yarn install
 ```
 
