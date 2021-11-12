@@ -34,5 +34,6 @@ You guessed it!
 
 ```bash
 git checkout step-3
+yarn install
 ```
 
