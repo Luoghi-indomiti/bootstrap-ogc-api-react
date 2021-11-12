@@ -66,5 +66,6 @@ yarn add bootstrap@latest
 
 ```bash
 git checkout step-2
+yarn install
 ```
 
