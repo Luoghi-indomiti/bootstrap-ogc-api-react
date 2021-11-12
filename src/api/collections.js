@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from "axios";
+import Items from "./items";
 
 class Collections extends Component {
 
@@ -48,7 +49,7 @@ class Collections extends Component {
     }
 
     render() {
-        const{collections, expanded} = this.state
+        const{collections, expanded, url} = this.state
         return(
             <div>
                 { 
@@ -62,7 +63,7 @@ class Collections extends Component {
                     <div>
                         <h3>Features collections</h3>
                         <ul>
-                            {collections.filter(collection => collection.itemType === 'feature').map(collection => <li key={collection.id}>{collection.title} - {collection.description}</li>)}
+                            {collections.filter(collection => collection.itemType === 'feature').map(collection => <li key={collection.id}>{collection.title} - {collection.description} <Items id={collection.id} url={url}></Items></li>)}
                         </ul>
                         <ul>
                             <h3>Other collections</h3>
