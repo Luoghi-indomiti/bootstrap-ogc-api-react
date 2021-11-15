@@ -1,7 +1,7 @@
-# Done
+# 🥳 Well done!
 
-## Nice to have...
-* Style the application
-* Load the features GeoJSONs on a map
-* Use [React context](https://reactjs.org/docs/context.html) to store url endpoint
-* Support another API OGC standard ...
+## If you are looking for an extra challenge, it would be nice to have...
+* Give some extra style to the code and to the application 💌 
+* Load the features GeoJSONs on a map 🗺️
+* Use [React context](https://reactjs.org/docs/context.html) to store url endpoint ⚛️
+* Support another API OGC standard ... 🏄‍♀️
