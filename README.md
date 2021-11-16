@@ -8,7 +8,7 @@
 In addition to conformance, every OGC API has a "collections" endpoint that returns the groupings of objects, features, as in our case, or others, depending on the specification implemented. Now we will list collections available.
 To do so, you'll need a working OGC API, better with some nice example data. If you don't have one, feel free to use one of the following:
 
-- [joana server](http://18.156.191.178)
+- [joana's server](https://features.byteroad.net)
 - [pygeoapi demo server](https://demo.pygeoapi.io/stable)
 
 ## Third step :rocket: 
