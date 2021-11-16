@@ -10,6 +10,7 @@ To do so, you'll need a working OGC API, better with some nice example data. If 
 
 - [joana's server](https://features.byteroad.net)
 - [pygeoapi demo server](https://demo.pygeoapi.io/stable)
+- [ldproxy demo server](https://demo.ldproxy.net/daraa)
 
 ## Third step :rocket: 
 
