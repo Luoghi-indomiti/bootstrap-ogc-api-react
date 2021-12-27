@@ -58,3 +58,7 @@ git checkout step-1
 yarn install
 ```
 
+## Purpose
+
+This workshop was produced in the context of the [eMOTIONAL Cities project](https://emotionalcities-h2020.eu/), with the purpose of exploring and advancing the OGC API Features standard.
+
