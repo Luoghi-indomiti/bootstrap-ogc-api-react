@@ -60,5 +60,6 @@ yarn install
 
 ## Purpose
 
-This workshop was produced in the context of the [eMOTIONAL Cities project](https://emotionalcities-h2020.eu/), with the purpose of exploring and advancing the OGC API Features standard.
+This workshop was produced in the context of the [eMOTIONAL Cities project](https://emotionalcities-h2020.eu/) (funded under the
+scope of the H2020 program, with number 945307) with the purpose of exploring and advancing the OGC API Features standard.
 
